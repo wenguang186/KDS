@@ -1,0 +1,10 @@
+Thumbs.db
+*.ncb
+Debug
+debug
+release
+Output
+*.htm
+BuildLog.htm
+*.suo
+KDS_EN

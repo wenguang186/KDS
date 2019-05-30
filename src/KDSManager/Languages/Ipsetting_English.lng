@@ -1,0 +1,14 @@
+﻿[LangOptions]
+DialogFontName=Arial
+DialogFontSize=18
+
+[STRING_TABLE]
+130=Connection failed!
+131=Connection succeeded!
+132=Setting failed!
+133=Please input server IP:
+134=Connect
+135=OK
+136=Cancel
+137=Local
+138=LAN

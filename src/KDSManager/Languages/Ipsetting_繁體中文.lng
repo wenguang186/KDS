@@ -1,0 +1,14 @@
+﻿[LangOptions]
+DialogFontName=Microsoft YaHei
+DialogFontSize=22
+
+[STRING_TABLE]
+1=確定
+2=取消
+130=連接失敗!
+131=連接成功!
+132=設置失敗!
+133=請輸入伺服器IP:
+134=連接
+
+

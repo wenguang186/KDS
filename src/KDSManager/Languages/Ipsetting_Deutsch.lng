@@ -1,0 +1,14 @@
+﻿[LangOptions]
+DialogFontName=Arial
+DialogFontSize=18
+
+[STRING_TABLE]
+1=OK
+2=Abbrechen
+130=Verbindung fehler
+131=Verbindung OK
+132=Einstellung fehler
+133=Geben Sie bitte die Server IP
+134=Verbinden
+
+

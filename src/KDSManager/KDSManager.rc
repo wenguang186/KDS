@@ -1,0 +1,580 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\KDSManager.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\KDSManager.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_KDSMANAGER_DIALOG DIALOGEX 0, 0, 543, 251
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 10, "微软雅黑", 400, 0, 0x86
+BEGIN
+    PUSHBUTTON      "挂起菜品(0)",IDC_BTN_PENDING,102,221,50,14,BS_BITMAP
+    PUSHBUTTON      "历史菜品(4)",IDC_BTN_HISTORY,160,221,50,14
+    PUSHBUTTON      "首页",IDC_BTN_FIRST,218,221,50,14
+    PUSHBUTTON      "上一页",IDC_BTN_PRE,276,221,50,14
+    PUSHBUTTON      "下一页",IDC_BTN_NEXT,334,221,50,14
+    PUSHBUTTON      "设置",IDC_BTN_SETTING,392,221,50,14
+    PUSHBUTTON      "退出",IDC_BTN_CLOSE,450,221,50,14
+    PUSHBUTTON      "末页",IDC_BTN_END,224,164,50,14,NOT WS_VISIBLE
+    CTEXT           "制作菜品平均时间：130秒",IDC_STATIC_AVGTIME,294,162,55,22,NOT WS_VISIBLE
+    PUSHBUTTON      "服务器IP",IDC_BTN_SERVERIP,362,163,50,14,NOT WS_VISIBLE
+    LTEXT           "第1/3页",IDC_STATIC_PAGENUM,166,167,51,8,NOT WS_VISIBLE
+    PUSHBUTTON      "排队菜品(8)",IDC_BTN_COOKING,44,221,50,14,BS_BITMAP
+END
+
+IDD_DLG_ITEM_DETAIL DIALOGEX 0, 0, 120, 270
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "微软雅黑", 400, 0, 0x86
+BEGIN
+    LTEXT           "数量：",IDC_STATIC_NUM,10,30,25,8
+    LTEXT           "1",IDC_STATIC_VAL_NUM,35,30,21,8
+    CTEXT           "单菜品名称",IDC_STATIC_VAL_ITEM,4,8,103,14
+    PUSHBUTTON      "挂  起",IDC_BTN_PEND,20,170,80,20
+    PUSHBUTTON      "订  单",IDC_BTN_ORDER,20,195,80,20
+    PUSHBUTTON      "完  成",IDC_BTN_DONE,20,220,80,20
+    LTEXT           "规格：",IDC_STATIC_UNIT,58,30,21,8
+    LTEXT           "中份",IDC_STATIC_VAL_UNIT,86,30,17,8
+    LTEXT           "调味品：",IDC_STATIC_DESC,10,45,34,8
+    LTEXT           "少辣",IDC_STATIC_VAL_DESC,45,45,65,16
+    LTEXT           "整单备注：",IDC_STATIC_ORDER_REMARK,10,60,41,8
+    LTEXT           "少盐",IDC_STATIC_VAL_ORDER_REMARK,45,60,63,8
+    LTEXT           "用餐方式：",IDC_STATIC_EATTYPE,10,75,41,8
+    LTEXT           "堂食",IDC_STATIC_VAL_EATTYPE,45,75,30,8
+    LTEXT           "点单员工：",IDC_STATIC_EMPLOYEE,10,95,41,8
+    LTEXT           "赵钱孙李",IDC_STATIC_VAL_EMPLOYEE,45,95,61,8
+    LTEXT           "下单电脑：",IDC_STATIC_POS,10,110,41,8
+    LTEXT           "收银电脑 编号1",IDC_STATIC_VAL_POS,45,110,62,8
+    LTEXT           "下单时间：",IDC_STATIC_ORDER_TIME,10,125,41,8
+    LTEXT           "流水号：",IDC_STATIC_CHKNUM,10,140,27,8
+    LTEXT           "桌台：",IDC_STATIC_TABLE,10,155,20,8
+    LTEXT           "人数：",IDC_STATIC_CUSTNUM,69,155,21,8
+    LTEXT           "5-21 10:00:00",IDC_STATIC_VAL_ORDER_TIME,45,125,63,8
+    LTEXT           "0001",IDC_STATIC_VAL_CHKNUM,39,140,29,8
+    LTEXT           "1号桌",IDC_STATIC_VAL_TABLE,35,155,31,8
+    LTEXT           "3",IDC_STATIC_VAL_CUSTNUM,95,155,13,8
+    PUSHBUTTON      "恢  复",IDC_BTN_RECOVERY,35,242,50,14
+    LTEXT           "牌号：",IDC_STATIC_CHECKNAME,69,140,21,8
+    LTEXT           "25",IDC_STATIC_VAL_CHECKNAME,95,140,13,8
+    LTEXT           "___________________________________",IDC_STATIC,7,83,106,8
+END
+
+IDD_DLG_SETTING DIALOGEX 0, 0, 325, 209
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置"
+FONT 10, "微软雅黑", 400, 0, 0x86
+BEGIN
+    PUSHBUTTON      "简体中文",IDC_BTN_LANGUAGE1,85,15,32,13
+    PUSHBUTTON      "English",IDC_BTN_LANGUAGE2,123,15,32,13
+    PUSHBUTTON      "繁体中文",IDC_BTN_LANGUAGE3,161,15,32,13
+    PUSHBUTTON      "...",IDC_BTN_LANGUAGE4,199,15,32,13
+    CONTROL         "单品",IDC_RADIO_DETIAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,85,33,54,10
+    CONTROL         "订单",IDC_RADIO_ORDER,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,148,33,54,10
+    CONTROL         "厨房",IDC_RADIO_COOK,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,85,46,54,10,WS_EX_TRANSPARENT
+    CONTROL         "传菜",IDC_RADIO_SEND,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,148,46,54,10
+    CONTROL         "叫号",IDC_RADIO_CALL,"Button",BS_AUTORADIOBUTTON,210,46,54,10
+    PUSHBUTTON      "服务器设置",IDC_BUTTON_SERVERSET,85,58,50,13
+    EDITTEXT        IDC_EDIT_REFRESHTIME,85,75,21,12,ES_CENTER | ES_AUTOHSCROLL
+    PUSHBUTTON      "-",IDC_BTN_REFRESHTIMESUBTRACT,141,74,20,14
+    PUSHBUTTON      "+",IDC_BTN_REFRESHTIMEADD,169,74,20,14
+    CONTROL         "所有",IDC_CHECK_ALLITEM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,85,92,44,6
+    CONTROL         "只显示名称1",IDC_RADIO_ONLYNAME1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,85,115,54,10
+    CONTROL         "只显示名称2",IDC_RADIO_ONLYNAME2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,148,115,54,10
+    CONTROL         "显示名称1和名称2",IDC_RADIO_NAME1ANDNAME2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,210,115,86,10
+    CONTROL         "开启",IDC_RADIO_RUSHOPEN,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,85,127,54,10
+    CONTROL         "关闭",IDC_RADIO_RUSHCLOSE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,148,127,54,10
+    PUSHBUTTON      "保  存",IDC_BTN_SAVE,60,172,90,25
+    PUSHBUTTON      "取  消",IDC_BTN_CANCEL,181,172,90,25
+    LTEXT           "打印机组：",IDC_STATIC_KITCHEN,22,91,51,8
+    LTEXT           "刷新时间：",IDC_STATIC_REFRESHTIME,22,76,51,8
+    LTEXT           "选择部门：",IDC_STATIC_MODE,22,46,51,8
+    LTEXT           "显示风格：",IDC_STATIC_STYLE,22,33,51,8
+    LTEXT           "选择语言：",IDC_STATIC_LANGUAGE,22,17,51,8
+    COMBOBOX        IDC_COMBO_LANGUAGE,276,0,16,30,CBS_DROPDOWN | CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "软件版本：",IDC_STATIC_VERLABEL,22,4,51,8
+    LTEXT           "V2.0.0.1",IDC_STATIC_VERSION,85,4,100,8
+    LTEXT           "秒",IDC_STATIC_SECOND,107,78,29,8,WS_TABSTOP
+    LTEXT           "菜品名称：",IDC_STATIC_ITEMNAME,22,115,51,8
+    LTEXT           "催菜优先：",IDC_STATIC_RUSHLABEL,22,127,51,8
+    LTEXT           "服务器：",IDC_STATIC_SERVERSETLABEL,22,61,51,8
+    CONTROL         "是",IDC_RADIO_SHOWCHECKID,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,85,139,54,10
+    CONTROL         "否",IDC_RADIO_HIDECHECKID,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,148,139,54,10
+    LTEXT           "显示分单号：",IDC_STATIC_SHOWCHECKID,22,139,51,8
+    LTEXT           "选择打印机：",IDC_STATIC_SELECTPRINT,22,151,51,8
+    COMBOBOX        IDC_COMBO_PRINT,85,151,48,57,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_ORDER DIALOGEX 0, 0, 431, 206
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "订单详情"
+FONT 10, "微软雅黑", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "关  闭",IDOK,68,168,90,25
+    CONTROL         "",IDC_LIST_DETAIL,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,179,7,245,192
+    LTEXT           "流水号：",IDC_STATIC_HEADID,27,15,38,8
+    LTEXT           "123456789",IDC_STATIC_VAL_HEADID,71,15,60,8
+    LTEXT           "单号：",IDC_STATIC_CHECKID,27,30,33,8
+    LTEXT           "1001/1",IDC_STATIC_VAL_CHECKID,71,30,45,8
+    LTEXT           "点单员工：",IDC_STATIC_EMPLOYEE,27,60,41,8
+    LTEXT           "赵钱孙李",IDC_STATIC_VAL_EMPLOYEE,71,60,106,8
+    LTEXT           "下单时间：",IDC_STATIC_ORDERTIME,27,75,41,8
+    LTEXT           "2016-06-16 12:00:00",IDC_STATIC_VAL_ORDERTIME,71,75,112,8
+    LTEXT           "完成时间：",IDC_STATIC_MAKETIME,27,90,41,8
+    LTEXT           "30分 12秒",IDC_STATIC_VAL_MAKETIME,71,90,107,8
+    LTEXT           "下单电脑：",IDC_STATIC_POS,27,105,41,8
+    LTEXT           "POS005",IDC_STATIC_VAL_POS,71,105,109,8
+    LTEXT           "用餐方式：",IDC_STATIC_EATTYPE,27,135,41,8
+    LTEXT           "堂食",IDC_STATIC_VAL_EATTYPE,71,135,32,8
+    LTEXT           "整单备注：",IDC_STATIC_REMARK,27,150,41,8
+    LTEXT           "少盐",IDC_STATIC_VAL_REMARK,71,150,115,8
+    LTEXT           "顾客人数：",IDC_STATIC_CUSTNUM,27,120,41,8
+    LTEXT           "1",IDC_STATIC_VAL_CUSTNUM,71,120,22,8
+    LTEXT           "牌号：",IDC_STATIC_CHECKNAME,27,44,21,8
+    LTEXT           "25",IDC_STATIC_VAL_CHECKNAME,71,45,21,8
+END
+
+IDD_DLG_ITEM_ORDER DIALOGEX 0, 0, 127, 298
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "微软雅黑", 400, 0, 0x86
+BEGIN
+    PUSHBUTTON      "挂  起",IDC_BTN_PEND,22,215,83,20
+    PUSHBUTTON      "完  成",IDC_BTN_DONE,22,240,83,20
+    CTEXT           "桌号.牌号",IDC_STATIC_ORDER,7,8,112,11
+    LTEXT           "点单员工：",IDC_STATIC_EMPLOYEE,7,40,41,8
+    LTEXT           "下单电脑：",IDC_STATIC_POS,7,50,41,8
+    LTEXT           "下单时间：",IDC_STATIC_ORDERTIME,7,60,37,8
+    LTEXT           "用餐方式：",IDC_STATIC_EATTYPE,7,70,39,8
+    LTEXT           "整单备注：",IDC_STATIC_REMARK,7,80,38,8
+    LTEXT           "静态",IDC_STATIC_VAL_EMPLOYEE,45,40,67,8
+    LTEXT           "静态",IDC_STATIC_VAL_POS,45,50,74,8
+    LTEXT           "静态",IDC_STATIC_VAL_ORDERTIME,45,60,66,8
+    LTEXT           "静态",IDC_STATIC_VAL_EATTYPE,45,70,22,8
+    LTEXT           "静态",IDC_STATIC_VAL_REMARK,45,80,70,8
+    LTEXT           "人数：",IDC_STATIC_CUSTNUM,67,70,21,8
+    LTEXT           "静态",IDC_STATIC_VAL_CUSTNUM,91,70,13,8
+    PUSHBUTTON      "恢  复",IDC_BTN_RECOVERY,22,265,83,20
+    LTEXT           "流水号：",IDC_STATIC_HEADID,7,30,28,8
+    LTEXT           "静态",IDC_STATIC_VAL_HEADID,37,30,30,8
+    LTEXT           "单号：",IDC_STATIC_CHECK_NUMBER,67,30,28,8
+    LTEXT           "静态",IDC_STATIC_VAL_CHKNUMBER,95,30,24,8
+    CONTROL         "",IDC_LIST_DETAIL,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,7,91,112,117
+END
+
+IDD_DLG_LANGSELECT DIALOGEX 0, 0, 159, 246
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "语言选择"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "标识位置和大小",IDC_BUTTON_LANGUAGE,47,14,62,16,NOT WS_VISIBLE
+END
+
+IDD_DLG_ORDERFUNCTION DIALOGEX 0, 0, 462, 287
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "菜品详情"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "完成 Enter",IDC_BTN_COOKCOMPLETE,40,145,68,30
+    PUSHBUTTON      "合并 F1",IDC_BTN_COMBINEORDER,118,145,68,30
+    PUSHBUTTON      "挂起 F2",IDC_BTN_PENDORDER,196,145,68,30
+    PUSHBUTTON      "不可制作 F3",IDC_BTN_DONOTMAKE,274,145,68,30
+    PUSHBUTTON      "关闭 F4",IDC_BTN_CLOSEDLG,352,145,68,30
+    CONTROL         "",IDC_STATIC_LINE,"Static",SS_BLACKFRAME,8,180,448,1
+    RTEXT           "牌号：",IDC_STATIC_CHECKNAMELABEL,17,190,59,8
+    RTEXT           "桌号：",IDC_STATIC_TABELNAMELABEL,17,207,59,8
+    RTEXT           "顾客人数：",IDC_STATIC_CUSTOMERNUMLABEL,17,224,59,8
+    RTEXT           "食用方式：",IDC_STATIC_EATTYPELABEL,17,241,59,8
+    RTEXT           "整单备注：",IDC_STATIC_REMARKLABEL,17,258,59,8
+    LTEXT           "1001/1",IDC_STATIC_CHECKNAME,90,190,80,8
+    LTEXT           "A3",IDC_STATIC_TABELNAME,90,207,80,8
+    LTEXT           "5",IDC_STATIC_CUSTOMERNUM,90,224,80,8
+    LTEXT           "堂食",IDC_STATIC_EATTYPEDETAIL,90,241,80,8
+    LTEXT           "---",IDC_STATIC_REMARK,90,258,80,8
+    RTEXT           "下单员工：",IDC_STATIC_OPENEMPLOYEENAMELABEL,229,190,59,8
+    RTEXT           "下单电脑：",IDC_STATIC_POSNAMELABEL,229,207,59,8
+    RTEXT           "下单时间：",IDC_STATIC_ORDERTIMELABEL,229,224,59,8
+    RTEXT           "完成时间：",IDC_STATIC_COMPLETETIMELABEL,229,241,59,8
+    LTEXT           "999",IDC_STATIC_OPENEMPLOEENAME,303,190,80,8
+    LTEXT           "POS #4",IDC_STATIC_POSNAME,303,207,80,8
+    LTEXT           "07-01 12:00:05",IDC_STATIC_ORDERTIME,303,224,80,8
+    LTEXT           "---",IDC_STATIC_COMPLETETIME,303,241,80,8
+    CTEXT           "用于定位DlgItemDetail的显示",IDC_STATIC_POSITION,151,4,138,14,SS_CENTERIMAGE
+END
+
+IDD_DLG_COMBINE DIALOGEX 0, 0, 551, 377
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "菜品合并"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "确定 Enter",IDC_BTN_COMBINECONFIRM,191,333,77,29
+    PUSHBUTTON      "取消 F4",IDC_BTN_CANCEL,279,333,77,29
+END
+
+IDD_DLG_ITEM_DETAILNEW2 DIALOGEX 0, 0, 138, 134
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "堂食",IDC_STATIC_EATTYPE,0,2,34,18,SS_CENTERIMAGE
+    CTEXT           "红烧鱼",IDC_STATIC_ITEMNAME1,0,21,137,30,SS_NOTIFY
+    CTEXT           "---",IDC_STATIC_ITEMNAME2,0,51,137,19
+    CTEXT           "少辣+整单备注",IDC_STATIC_DESCRIPTION,0,67,137,26
+    CTEXT           "x8 大份",IDC_STATIC_QUANTITY,4,97,75,22
+    CTEXT           " 8 分钟",IDC_STATIC_WAITTIME,78,108,54,12,SS_CENTERIMAGE
+    CTEXT           "桌号：A4  流水号：10001",IDC_STATIC_TABELNAME,0,118,137,15,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC_WAITPICTURE,"Static",SS_BITMAP | SS_NOTIFY,87,99,36,11
+    CONTROL         "",IDC_STATIC_SELECTPICTURE,"Static",SS_BITMAP,113,3,17,14
+    CONTROL         "",IDC_STATIC_RUSHPICTRUE,"Static",SS_BITMAP,43,5,36,13
+    CONTROL         "",IDC_STATIC_OUTTIME,"Static",SS_BITMAP,80,5,36,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 17,3,14,21
+ PRODUCTVERSION 16,7,22,20
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "深圳市库瑞德科技有限公司"
+            VALUE "FileDescription", "厨房显示"
+            VALUE "FileVersion", "16.07.22.20"
+            VALUE "InternalName", "KDSManager.exe"
+            VALUE "LegalCopyright", " (C) 深圳市库瑞德科技有限公司 保留所有权利。"
+            VALUE "OriginalFilename", "KDSManager.exe"
+            VALUE "ProductName", "厨房显示系统"
+            VALUE "ProductVersion", "17.3.14.21"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_KDSMANAGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 536
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+    END
+
+    IDD_DLG_ITEM_DETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 113
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 263
+    END
+
+    IDD_DLG_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 318
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_DLG_ORDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 424
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_DLG_ITEM_ORDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 119
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_DLG_LANGSELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_DLG_ORDERFUNCTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 455
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 280
+    END
+
+    IDD_DLG_COMBINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 544
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 370
+    END
+
+    IDD_DLG_ITEM_DETAILNEW2, DIALOG
+    BEGIN
+        RIGHTMARGIN, 137
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 127
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STR_GOBACK_COOK     "返回待做"
+    IDS_STR_GOBACK_SEND     "返回待传"
+    IDS_STR_RECOVERY        "恢  复"
+    IDS_STR_ORDER           "订  单"
+    IDS_STR_PENDING         "挂  起"
+    IDS_STR_DONE            "完  成"
+    IDS_STR_PAGENUM         "共%d张单\n第%d/%d页"
+    IDS_STR_HISTORYLIST     "历史菜单"
+    IDS_STR_PENDLIST        "挂起菜单"
+    IDS_STR_FIRST           "首页"
+    IDS_STR_PRE             "上一页"
+    IDS_STR_NEXT            "下一页"
+    IDS_STR_END             "末页"
+    IDS_STR_CLOSE           "关闭"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STR_AVGTIME         "平均制作时间：%d秒"
+    IDS_STR_SETTING         "设置"
+    IDS_STR_QUANTITY        "数量"
+    IDS_STR_COOKING         "厨房排队"
+    IDS_STR_COOKED          "制作完成"
+    IDS_STR_SENDED          "传菜完成"
+    IDS_STR_REGMSG          "试用版本有限制，请注册正式版本使用"
+    IDS_STR_NOTVALID        "亲^_^\n  还没注册呢，功能可能会受限制呦::>_<::\n  赶快去注册一下吧（￣︶￣）↗"
+    IDS_STR_GUOQI           "亲^_^\n  注册码过期了<{=·····\n  软件功能可能受限呦::>_<::\n  重新注册一下吧（￣︶￣）↗"
+    IDS_STR_NOTTHISMACH     "亲^_^\n  你是不是弄错了，注册码不匹配哦<{=·····\n  快去检查一下吧（￣︶￣）↗"
+    IDS_STR_NOTREG          "亲^_^\n  你是不是弄错了，不是这个注册码呀<{=·····"
+    IDS_EXPIER              "亲^_^\n  注册码快到期了呦，赶紧再去申请一个吧\n  走起（￣︶￣）↗"
+    IDS_STR_NUM             "数量："
+    IDS_STR_UNIT            "规格："
+    IDS_STR_DESC            "调味品："
+    IDS_STR_REMARK          "整单备注："
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STR_EATTYPE         "用餐方式："
+    IDS_STR_OPENEMPLOYEE    "点单员工："
+    IDS_STR_POS             "下单电脑："
+    IDS_STR_ORDERTIME       "下单时间："
+    IDS_STR_HEADID          "流水号："
+    IDS_STR_CHECKNUM        "单号："
+    IDS_STR_CHECKNAME       "牌号："
+    IDS_STR_TABLE           "桌台："
+    IDS_STR_CUSTNUM         "人数："
+    IDS_STR_KDSTIME         "完成时间："
+    IDS_STR_CUSTNUM4        "顾客人数："
+    IDS_STR_KDSSTYLE        "显示风格："
+    IDS_STR_KDSMODE         "显示模式："
+    IDS_STR_REFRESHTIME     "刷新时间："
+    IDS_STR_STALL           "打印机组："
+    IDS_STR_KITCHEN         "厨房"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STR_SEND            "传菜"
+    IDS_STR_BYDETAIL        "单品"
+    IDS_STR_BYORDER         "订单"
+    IDS_STR_SAVE            "保存"
+    IDS_STR_CANCEL          "取消"
+    IDS_STR_TAKEOUT         "外卖"
+    IDS_STR_EATIN           "堂食"
+    IDS_STR_ITEM            "菜品"
+    IDS_STR_PROCESS         "进度"
+    IDS_STR_CONDIMENT       "调味品"
+    IDS_STR_SPEC            "规格"
+    IDS_STR_LANG            "选择语言："
+    IDS_STR_LOSTSERVER      "无法连接到数据库，请首先设置好服务器IP，然后重启系统"
+    IDS_STR_SERVERIP        "服务器IP"
+    IDS_STR_DBERROR         "数据库发生错误，请检查配置是否正确"
+    IDS_ALREADYRUN          "程序已经在运行了"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STR_COOKLIST        "排队菜单"
+    IDS_STR_TABLENAME       "桌号：%s    流水号：%s"
+    IDS_STR_TIMEDIFF        " %s  分钟"
+    IDS_STR_QUANTITY_UNIT   "x %s   %s"
+    IDS_STR_COOKCOMPLETE    "完成 Enter"
+    IDS_STR_COMBINEORDER    "合并 F1"
+    IDS_STR_PENDORDER       "挂起 F2"
+    IDS_STR_DONOTMAKE       "不可制作 F3"
+    IDS_STR_CLOSEDLG        "关闭 F4"
+    IDS_STR_CANCELPEND      "取消挂起 F2"
+    IDS_STR_ITEMNAME        "菜品名称："
+    IDS_STR_ONLYNAME1       "只显示菜品名1"
+    IDS_STR_ONLYNAME2       "只显示菜品名2"
+    IDS_STR_NAME1ANDNAME2   "显示菜品名1和菜品名2"
+    IDS_STR_RUSHOPEN        "打开"
+    IDS_STR_RUSHCLOSE       "关闭"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STR_VERSIONLABEL    "软件版本："
+    IDS_STR_TIMESECOND      "秒"
+    IDS_STR_RUSHLABEL       "催菜优先："
+    IDS_STR_SETMEAL         "套餐"
+    IDS_STR_FREE            "赠送"
+    IDS_STR_RUSH            "催菜"
+    IDS_STR_OUTTIME         "超时"
+    IDS_STR_WAIT            "已等待"
+    IDS_STR_SERVERSETTING   "服务器设置"
+    IDS_STR_INVALID         "不可制作"
+    IDS_STR_RETURN          "退菜"
+    IDS_STR_CALL            "叫号"
+    IDS_STR_CONFIGTIP       "配置完成，请重启程序！"
+    IDS_STR_CALLTIP         " 请留意您的订单号码取餐 please check your number"
+    IDS_STR_PREPARE         " 准备中"
+    IDS_STR_FETCH           " 请取餐"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STR_COOKTIME        "  用时"
+    IDS_STR_ALLPRINTCLASS   "所有"
+    IDS_STR_DELIVERY        "外送"
+    IDS_STR_YES             "是"
+    IDS_STR_NO              "否"
+    IDS_STR_SHOWCHECKID     "显示分单号："
+    IDS_STR_PRINTLABEL      "选择打印机："
+    IDS_STR_NOTPRINT        "不打印"
+    IDS_STR_INITKITCHENTYPE "初始化厨房档口失败"
+    IDS_STR_NOKITCHENTYPE   "没有配置厨房档口，请配置。"
+    IDS_STR_LOADLANGUAGE    "加载语言失败"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\KDSManager.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
